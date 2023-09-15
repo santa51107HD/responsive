@@ -83,3 +83,114 @@ header{
 .spread{
     transform: translate(0);
 }
+
+/*SERVICIO*/
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #9F8ad0;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor-servicio{
+    /*border: solid thin green;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-servicio img {
+    width: 40%;
+}
+
+.checklist-servicio {
+    width: 45%;
+}
+
+.service{
+    margin-bottom: 20px;
+}
+
+.n-service{
+    margin-bottom: 7px;
+    color: #9F8ad0;
+}
+
+.number {
+    display: inline-block;
+    background-image: linear-gradient(to top, #a18cd1 0, #fbc2eb 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.gallery{
+    background-color: #f2f2f2;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria {
+    width: 30%;
+    display: block;
+    margin-top: 15px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.image-light{
+    position: fixed;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex; /* Cambiar a flex para centrar vertical y horizontalmente */
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s ease-in-out;
+    transform: translate(100%); /* Cambiar translate a translateX */
+    /**overflow: hidden; /* Añadir overflow para que la imagen pueda expandirse */
+}
+
+.agregar-imagen{
+    object-fit: cover;
+    width: 60%;
+    /**object-fit: contain; /* Cambiar a contain para que la imagen se ajuste en el contenedor */
+    /**max-width: 100%; /* Añadir para asegurarse de que la imagen no se desborde */
+    /**max-height: 100%; /* Añadir para asegurarse de que la imagen no se desborde */
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform .3s .2s;
+}
+
+.close{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/*
+
+.showImage {
+    transform: scale(1);
+}
+*/
+.show{
+    transform: translate(0);
+}
